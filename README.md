@@ -1,7 +1,7 @@
-Kainos Tester Recruitment: WebDriverJS
-=======================================
+QA Tester Recruitment: WebDriverJS
+==================================
 
-This repository contains WebDriverJS code examples and exercises specifically for Kainos recruitment purposes.
+This repository contains WebDriverJS code examples and exercises specifically for QA recruitment purposes.
 Over time more test examples and exercises will be uploaded.
 
 ## WIP: Examples to be added:
