@@ -1,6 +1,6 @@
 {
   "BrowserType": "chrome",
-  "url": "http://the-internet.herokuapp.com/",
+  "url": "http://adam.goucher.ca/parkcalc/",
   "explicitWaitMS": 2000,
   "mochaTimeoutMS": 30000
 }

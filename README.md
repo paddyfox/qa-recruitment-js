@@ -1,17 +1,17 @@
 QA Tester Recruitment: WebDriverJS
 ==================================
 
-This repository contains WebDriverJS code examples and exercises specifically for QA recruitment purposes.
-Over time more test examples and exercises will be uploaded.
+This repository contains three simple Selenium WebDriver Javascript examples using Maven.
 
-## WIP: Examples to be added:
+The tests all pass when run.
 
-- Selectable
-- Sortable
-- Actionable
-- Radio Button
-- Checkbox
-- Datepicker
+## Exercise:
+You've been provided with some Selenium scripts for a parking calculator application.
+
+- Explain what the test code is doing.
+- Explain what the tests are testing for.
+- Describe any changes you would make in relation to 'best practices' with the test code.
+
 
 ## Pre-requisites
 
@@ -62,14 +62,7 @@ Right-click and select run 'npm update'
 npm test
 ```
 
-### Run a test individually
-
-```bash
-mocha --compilers js:babel-core/register specs/login-spec.js
-```
-
 --
 
-## Feedback
-
-If you would like to leave feedback or comment on any test examples please contact me
+## References / Credits
+The application referred to is the Grand Rapids Airport Parking Lot Calculator developed by Adam Goucher.
