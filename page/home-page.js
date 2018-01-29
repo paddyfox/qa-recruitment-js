@@ -5,7 +5,7 @@ import BasePage from "./base-page.js";
 
 let pageHeading = By.className('PageTitle');
 
-const chai = require('chai')
+const chai = require('chai');
 var expect = chai.expect;
 
 export default class MainPage extends BasePage {
@@ -21,30 +21,23 @@ export default class MainPage extends BasePage {
     }
 
     pageElementsCheck() {
-        this.driver.findElements(By.id("Lot")).then(function(elements){
-            elements.forEach(function (element) {
-                element.getText().then(function(text){
-                });
-            });
+        var driver = this.driver;
+        var elementListID = ['Lot', 'EntryTime', 'ExitTime', 'EntryDate', 'ExitDate'];
+        var elementListName = ['Submit', 'EntryTimeAMPM', 'ExitTimeAMPM', 'Submit'];
+
+        elementListID.forEach(function (element) {
+            driver.findElement(By.id(element)).isEnabled();
         });
 
-        //     String[] elementListID = {"Lot", "EntryTime", "ExitTime", "EntryDate", "ExitDate"};
-        //
-        //     String[] elementListName = {"Submit", "EntryTimeAMPM", "ExitTimeAMPM", "Submit"};
-        //
-        //     for (int i=0; i<elementListID.length; i++){
-        //         Assert.assertTrue(driver.findElements(By.id(elementListID[i])).size() > 0);
-        //     }
-        //
-        //     for (int i=0; i<elementListName.length; i++){
-        //         Assert.assertTrue(driver.findElements(By.name(elementListName[i])).size() > 0);
-        //     }
-        // }
+        elementListName.forEach(function (element) {
+            driver.findElement(By.name(element)).isEnabled();
+        });
     }
 
     lotDropdownContentCheck() {
         var expected_elements = ['Short-Term Parking', 'Economy Parking', 'Long-Term Surface Parking', 'Long-Term Garage Parking', 'Valet Parking'];
-        this.driver.findElements(By.css("#Lot option")).then(function(elements){
+
+        this.driver.findElements(By.css("#Lot option")).then(function(elements) {
             elements.forEach(function (element) {
                 element.getText().then(function(text) {
                     expect(expected_elements).to.contain(text);

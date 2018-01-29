@@ -8,7 +8,7 @@ let page = null;
 
 const mochaTimeoutMS = config.get('mochaTimeoutMS');
 
-test.describe('Navigate to the home page and verify elements', function () {
+test.describe('Navigate to the Parking Calculator page and verify elements', function () {
     this.timeout(mochaTimeoutMS);
 
     test.before(function () {
@@ -16,7 +16,7 @@ test.describe('Navigate to the home page and verify elements', function () {
         page = new MainPage(driver, true);
     });
 
-    test.it('Verify the Page title text is displayed', function () {
+    test.it('Verify the Page title', function () {
         page.pageHeadingTextCheck();
     });
 
