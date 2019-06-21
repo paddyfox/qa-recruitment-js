@@ -12,29 +12,6 @@ You've been provided with some Selenium scripts for a parking calculator applica
 - Explain what the tests are testing for.
 - Describe any changes you would make in relation to 'best practices' with the test code.
 
-
-## Pre-requisites
-
-```bash
-npm install babel-preset-env
-```
-
-```bash
-npm install
-```
-
-```bash
-npm install -g mocha
-```
-
-```bash
-npm install -g chai
-```
-
-```
-npm install -g eslint
-```
-
 --
 
 ### Setup IntelliJ IDEA
@@ -52,6 +29,15 @@ Select "ECMAScript 6" from JavaScript Language Version dropdown menu
 ```
 Open package.json file
 Right-click and select run 'npm update'
+```
+
+--
+
+## Pre-requisites
+
+```bash
+npm install --save-dev gulp-babel @babel/core @babel/register @babel/preset-env webpack chai mocha eslint
+
 ```
 
 --
